@@ -2,9 +2,9 @@
 
 # Implementando testes unitários no Android
 
-Descrição...
+Implementar testes unitários em projetos Android parece ser algo desafiador e complexo.
 
-Nesta aula, iremos aprender a maneira correta de implementar testes unitário no Android em um projeto com arquitetura MVVM + Clean Architecture e Coroutines.
+Nesta aula, iremos desmistificar isso e aprender, de uma vez por todas, a implementar testes unitários no Android considerando um projeto com arquitetura limpa. Iremos validar a lógica dentro do componente “view model” dos componentes de arquitetura do Android e cobrir todos os cenários de teste definidos.
 
 ## Expert
 
