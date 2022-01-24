@@ -5,7 +5,7 @@ import androidx.lifecycle.*
 import com.expertsclub.expertsauthentication.ExpertsApp
 import com.expertsclub.expertsauthentication.base.AppCoroutinesDispatchers
 import com.expertsclub.expertsauthentication.base.ResultStatus
-import com.expertsclub.expertsauthentication.data.repository.UserRepository
+import com.expertsclub.expertsauthentication.data.repository.UserRepositoryImpl
 import com.expertsclub.expertsauthentication.domain.usecase.LoginUseCase
 import com.expertsclub.expertsauthentication.framework.preferences.datasource.PreferencesDataSourceImpl
 import com.expertsclub.expertsauthentication.framework.preferences.manager.LocalPersistenceManagerImpl
@@ -57,7 +57,7 @@ class LoginViewModel(private val loginUseCase: LoginUseCase) : ViewModel() {
                     computation = Dispatchers.Default,
                     main = Dispatchers.Main
                 )
-                val userRepository = UserRepository(localPersistenceManager)
+                val userRepository = UserRepositoryImpl(localPersistenceManager)
 
                 val loginUseCase = LoginUseCase(userRepository, dispatchers.io)
 
